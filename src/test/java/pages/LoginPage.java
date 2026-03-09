@@ -20,5 +20,8 @@ public class LoginPage {
     @FindBy(xpath = "//button[@data-testid='login-submit-btn']")
     public WebElement signInButton;
 
+    @FindBy(xpath = "//div[@data-testid='login-error-message']")
+    public WebElement invalidCredentialsText;
+
 
 }

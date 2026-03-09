@@ -45,5 +45,11 @@ public class LoginSteps extends BaseUI {
         waitAndClick(dashboardPage.signOutButton);
     }
 
+    @Then("verify user failed to sign in")
+    public void verify_user_failed_to_sign_in() {
+        waitUntilVisible(20, loginPage.invalidCredentialsText);
+        Assertions.assertTrue(loginPage.invalidCredentialsText.isDisplayed());
+    }
+
 
 }
