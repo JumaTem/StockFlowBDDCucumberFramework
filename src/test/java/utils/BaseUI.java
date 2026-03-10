@@ -125,5 +125,10 @@ public class BaseUI {
         wait.until(ExpectedConditions.urlContains(text));
     }
 
+    public void waitUntilTextVisibleInElement(int seconds, WebElement element, String text) {
+        new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(seconds))
+                .until(ExpectedConditions.textToBePresentInElement(element, text));
+    }
+
 
 }
