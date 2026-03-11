@@ -1,4 +1,5 @@
-  Feature: products page related scenarios
+@smoke @regression
+Feature: products page related scenarios
 
     Background:
       Given user goes to sign in page

@@ -1,3 +1,4 @@
+@smoke  @regression
 Feature: all login related test scenarios
 
   Background:
@@ -20,7 +21,7 @@ Feature: all login related test scenarios
 #    And user enters password "password123"
 #    And user clicks on sign in button
 #    Then verify user signed in successfully
-
+  @usersLogin
   Scenario Outline: verify all types of users can login
     When user enters username "<username>"
     And user enters password "<password>"
