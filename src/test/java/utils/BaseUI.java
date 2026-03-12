@@ -130,5 +130,13 @@ public class BaseUI {
                 .until(ExpectedConditions.textToBePresentInElement(element, text));
     }
 
+    public void navigateBack() {
+        Driver.getDriver().navigate().back();
+    }
+
+    public void waitFor(int seconds) {
+        try { Thread.sleep(seconds * 1000L); } catch (Exception ignored) {}
+    }
+
 
 }
