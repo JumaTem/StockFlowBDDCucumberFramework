@@ -6,7 +6,7 @@ The purpose of this framework is to automate important business workflows such a
 Cucumber is used to write test scenarios in Gherkin language, allowing both technical and non-technical team members to easily understand the test cases.
 
 Technologies Used
-Java
+Java:wq
 Selenium WebDriver
 Cucumber (BDD)
 JUnit
